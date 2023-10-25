@@ -1,0 +1,2 @@
+_LETRAS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "U", "V", "W", "X", "Y", "Z"];
+_RESERVA = ["Reserva correcta", "Reserva realizada pero no se respeta la preferencia de ventanilla / pasillo", "Autobús lleno (reserva no realizada)"];
