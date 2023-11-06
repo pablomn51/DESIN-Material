@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas de Informática</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+        <h1>AULAS DE INFORMÁTICA</h1>
+    <form>
+                <label for="nombre">Nombre de aula</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+
+                <label for="numero-filas">Número de filas</label>
+                <input type="number" min="1" name="numero-filas" id="numero-filas">    
+
+                <label for="numero-columnas">Número de columnas</label>
+                <input type="number" min="1" name="numero-columnas" id="numero-columnas">  
+
+                <label for="maximo-equipos">Número máximo de equipos</label>
+                <input type="number" min="1" name="maximo-equipos" id="maximo-equipos"> 
+                
+                <input type="radio" name="ocupacion-aula" id="aula-llena" value="aula-llena"><label for="llena">Aula llena</label>       
+                <input type="radio" name="ocupacion-aula" id="aula-vacia" value="aula-vacia" checked><label for="vacia">Aula vacía</label>       
+      
+            <button id="crear-aula" value="crear-aula">Crear aula</button>
+            <button id="ver-aula"   value="ver-aula">Ver datos de  aula</button>
+
+    </form>
+    <div class="lista-aulas">
+    
+    </div>
+
+</body>
+</html>
