@@ -1,0 +1,139 @@
+
+*{
+    font-family:"Nanum Gothic";
+}
+
+h1{
+    text-align:center;
+    padding:1rem;
+    font-size:3rem;
+    background-color:#aada3c;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    font-family:"Nanum Gothic";
+}
+
+h1 .gatito{
+    width:100px;
+    height:100px;
+    
+}
+
+h1 .gatito img{
+    width:100%;
+    height:100%;
+    border-radius: .2rem;
+    border:2px solid #576b29;
+}
+
+.menu{
+    background-color:#729c11;
+    font-family:"Nanum Gothic";
+
+}
+
+.menu ul{
+    display:flex;
+    justify-content: space-around;
+}
+
+.menu ul li{
+    flex-grow:1;
+    text-align:center;
+    padding:1rem;
+    font-size:2rem;
+    color:white;
+}
+
+.menu ul li:hover{
+    cursor:pointer;
+    background-color:#576b29;
+
+}
+
+
+.listado{
+    padding:1rem;
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+    justify-content: center;
+    font-family:"Nanum Gothic";
+
+}
+
+.listado .hecho{
+    background-color: #d3e1b3;
+    border-radius:.3rem;
+    padding:1rem;
+    flex-basis:20%;
+    font-style: italic;
+    text-align:center;
+}
+
+
+.listado .raza{
+    background-color: #9edd0b;
+    border-radius:.3rem;
+    padding:1rem;
+    flex-basis:20%; 
+    text-align:center;
+    height:100%;
+}
+
+.raza h2{
+    font-size:2rem;
+    padding:1rem;
+    border-radius:.2rem;
+    border:2px solid #576b29;
+    margin-bottom:1rem;
+}
+.raza .campo{
+    text-align:left;
+    padding:.5rem;
+    border-radius:.2rem;
+    background-color:#729c11;
+    margin-bottom:.5rem;
+}
+
+form{
+    padding:1rem;
+    background-color: #d3d3d3;
+    font-family:"Nanum Gothic";
+
+}
+
+input{
+    font-size:1rem;
+    padding:.2rem;
+    width:50%;
+}
+
+button{
+    border:none;
+    background-color:#729c11;
+    color:white;
+    margin-left:1rem;
+    padding:1rem;
+    border-radius: .2rem;
+    font-size:1rem;
+}
+
+button:hover{
+    background-color:#879e51;
+    cursor:default;
+
+}
+
+/* Errores del formulario */
+
+.error{
+    background-color:#fcddcf;
+    color:#ee520f;
+    border-radius: .2rem;
+    display:inline-block;
+    padding:1rem;
+    margin-left:1rem;
+}
+
