@@ -1,0 +1,7 @@
+{
+  "name": "ValidacionApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

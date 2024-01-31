@@ -1,0 +1,40 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title id="titulo" class="ion-padding-top">Marvel </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-sm="6" *ngFor="let personaje of personajes">
+          <ion-card>
+            <ion-fab vertical="top" horizontal="end">
+              <ion-fab-button (click)="verComics(personaje.id)" color="danger"><ion-icon name="book-outline"></ion-icon></ion-fab-button> 
+            </ion-fab>
+            <img [src]="personaje.thumbnail.path + '/landscape_xlarge.' + personaje.thumbnail.extension" />
+    
+             <ion-card-header>
+              <ion-card-title>{{personaje.name}}</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              <ion-text *ngIf="personaje.description">{{personaje.description}}</ion-text> 
+              <ion-text *ngIf="!personaje.description">No description available</ion-text> 
+              
+            </ion-card-content>
+            
+           
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+  </ion-grid>
+  <ion-infinite-scroll (ionInfinite)="scrollInfinito($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+
+
+ 
+</ion-content>

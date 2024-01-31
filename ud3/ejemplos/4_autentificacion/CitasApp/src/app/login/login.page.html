@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Citas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form [formGroup]="formulario" (ngSubmit)="login()">
+    <ion-item>
+      <ion-input  label="Login" type="text" formControlName="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Password" type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <ion-button [disabled]="obtenidoLogin()" class="ion-margin" type="submit" color="warning">
+      Login
+    </ion-button>
+    <ion-button (click)="logout()" [disabled]="!obtenidoLogin()" class="ion-margin" color="danger">
+      Logout
+    </ion-button>
+  </form>
+  <ion-card class="ion-padding background-light" >
+    <ion-button (click)="obtenerCitas()"   [disabled]="!obtenidoLogin()">Obtener citas</ion-button>
+    <ion-list>
+      <ion-list-header *ngIf="citas.length>0"></ion-list-header>
+      <ion-item *ngFor="let cita of citas">
+        <ion-text>{{cita.quote}} </ion-text>
+        <ion-badge  class="ion-margin">{{cita.author}}</ion-badge>
+      </ion-item>
+    </ion-list>
+  
+  </ion-card>
+</ion-content>
