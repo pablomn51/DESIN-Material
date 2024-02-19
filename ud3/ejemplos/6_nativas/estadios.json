@@ -1,0 +1,85 @@
+{
+    "estadios_nba": [
+      {
+        "equipo": "Los Angeles Lakers",
+        "estadio": "Staples Center",
+        "ciudad": "Los Angeles",
+        "capacidad": 19068,
+        "latitud": 34.043,
+        "longitud": -118.267
+      },
+      {
+        "equipo": "Golden State Warriors",
+        "estadio": "Chase Center",
+        "ciudad": "San Francisco",
+        "capacidad": 18064,
+        "latitud": 37.768,
+        "longitud": -122.387
+      },
+      {
+        "equipo": "Boston Celtics",
+        "estadio": "TD Garden",
+        "ciudad": "Boston",
+        "capacidad": 19580,
+        "latitud": 42.366,
+        "longitud": -71.062
+      },
+      {
+        "equipo": "Chicago Bulls",
+        "estadio": "United Center",
+        "ciudad": "Chicago",
+        "capacidad": 23500,
+        "latitud": 41.880,
+        "longitud": -87.674
+      },
+      {
+        "equipo": "Miami Heat",
+        "estadio": "American Airlines Arena",
+        "ciudad": "Miami",
+        "capacidad": 19600,
+        "latitud": 25.781,
+        "longitud": -80.187
+      },
+      {
+        "equipo": "Houston Rockets",
+        "estadio": "Toyota Center",
+        "ciudad": "Houston",
+        "capacidad": 18055,
+        "latitud": 29.751,
+        "longitud": -95.362
+      },
+      {
+        "equipo": "Toronto Raptors",
+        "estadio": "Scotiabank Arena",
+        "ciudad": "Toronto",
+        "capacidad": 19800,
+        "latitud": 43.643,
+        "longitud": -79.379
+      },
+      {
+        "equipo": "Dallas Mavericks",
+        "estadio": "American Airlines Center",
+        "ciudad": "Dallas",
+        "capacidad": 19200,
+        "latitud": 32.790,
+        "longitud": -96.810
+      },
+      {
+        "equipo": "Philadelphia 76ers",
+        "estadio": "Wells Fargo Center",
+        "ciudad": "Philadelphia",
+        "capacidad": 20478,
+        "latitud": 39.901,
+        "longitud": -75.171
+      },
+      {
+        "equipo": "New York Knicks",
+        "estadio": "Madison Square Garden",
+        "ciudad": "New York",
+        "capacidad": 19812,
+        "latitud": 40.750,
+        "longitud": -73.993
+      }
+    ]
+  }
+  
