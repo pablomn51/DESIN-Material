@@ -1,0 +1,31 @@
+/* Estilos de cabecera */
+#cabecera {
+  display: flex;
+  justify-content: center;
+}
+#cabecera h1, #cabecera i {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+#cabecera form {
+  font-size: 1rem;
+  padding: 2rem;
+}
+#cabecera #cartas-pendientes {
+  font-size: 1rem;
+}
+
+#boton-pedir, label, input {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+#numero-cartas {
+  width: 4rem;
+}
+
+/* Estilos de la carta */
+.carta img {
+  width: 50%;
+  margin: 0 auto;
+}

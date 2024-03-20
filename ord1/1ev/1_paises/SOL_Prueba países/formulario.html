@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Recuperación Primera Evaluación</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="style/formulario.css" />
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <script src="js/lista_paises.js"></script>
+        <script src="js/ejercicioPaises.js"></script>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="anadir">
+                <h3>Añadir un país</h3>
+                <form id="formulario">
+                    <div class="linea_formulario">
+                        <label for="codigo">Código</label>
+                        <input type="text" name="codigo" id="codigo" value="" />
+
+                        <div class="limpia"> </div>
+                    </div>
+
+                    <div class="linea_formulario">
+                        <label for="nombre" >Nombre</label>
+                        <input type="text" name="nombre" id="nombre" value="" />
+                        <div class="limpia"> </div>
+                    </div>
+
+                    <div class="linea_formulario">
+                        <label for="poblacion" >Poblacion</label>
+                        <input type="text" name="poblacion" id="poblacion" />
+
+                        <div class="limpia"> </div>
+                    </div>
+
+                    <div>
+                        <input type="button" class="botones" name="anadir" id="anadirPais" value="Añadir"/>
+                        <div class="limpia"> </div>
+                    </div>
+                </form>
+                <div class="linea_formulario error oculto" id="mensaje"></div>
+            </div>
+            <div id="lista">
+                <h3>Lista de paises</h3>
+                <div id="paises" class="paises"></div>
+            </div>
+        </div>
+    </body>
+</html>

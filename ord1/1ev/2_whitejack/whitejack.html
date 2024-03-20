@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiteJack</title>
+    <!-- Librería Bootstrap e iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+       
+    <!-- Hoja de estilos-->
+    <link rel="stylesheet" href="css/whitejack.css">
+       
+
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+
+    <!-- Título -->
+    <div id="cabecera" class="text-light bg-secondary">
+        <i class="bi bi-suit-club-fill"></i>
+        <i class="bi bi-suit-diamond-fill"></i>
+        <h1> Whitejack</h1>
+        <i class="bi bi-suit-heart-fill"></i>
+        <i class="bi bi-suit-spade-fill"></i>
+    </div>
+   
+    <!-- Barra de navegación -->
+     <nav class="bg-body-secondary ">
+        <div class="container-fluid"> <!-- Container necesario para tener filas -->
+            <div class="row "> <!-- Fila necesaria para maquetar por columnas -->
+                <div class="col-3 d-flex align-items-center justify-content-center"> 
+                    <button id="boton-nueva"  class="btn btn-success" >Nueva partida</button>                   
+                </div>
+                <div class="col-4 bg-light p-3 d-flex align-items-center"> 
+                    <button id="boton-pedir" type="submit" class="btn btn-warning" >Pedir cartas</button>           
+                    <label for="numero-cartas" class="form-label">Cantidad</label>
+                    <input id="numero-cartas" type="number" name="numero-cartas" >
+                </div>
+                <div class="col-2 d-flex align-items-center justify-content-center">
+                    <button id="boton-descartar" class="btn btn-warning" >Descartar todas</button> 
+                </div>
+                <div class="col-3 bg-light d-flex align-items-center justify-content-end pe-5">
+                    <button id="cartas-pendientes" disabled  class="btn btn-primary position-relative">
+                        Cartas pendientes
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        48
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav> 
+</header> <!-- Cierre cabecera -->
+    <main>
+        <div class="container-fluid p-0"> <!-- Container necesario para tener filas-->
+            <div class="row"> <!-- Fila necesaria para maquetar por columnas -->
+                <!-- Carta de la banca -->
+                <div class="carta col-3 p-3">
+                    <div class="card p-3 bg-secondary-subtle" >
+                        <img src="https://deckofcardsapi.com/static/img/4H.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="btn btn-danger text-center ">4 de Corazones</h5>
+                            </div> 
+                            <button disabled class="btn btn-secondary">BANCA</button>
+                        </div>
+                </div>               
+                <!-- Cartas de la jugada -->
+                    <div class="carta  col-3 p-3">
+                      <div class="card p-3 bg-primary-subtle" >
+                        <img src="https://deckofcardsapi.com/static/img/9S.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="btn btn-dark text-light card-title text-center">9 de Picas</h5> 
+                            </div>
+                        <button  class="btn btn-warning">Descartar</button>
+                        </div>
+                    </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </main>    
+</body>
+</html>
