@@ -1,0 +1,137 @@
+
+*{
+	font-family: 'Moon Flower', sans-serif;
+        box-sizing: border-box;
+}
+
+
+@font-face{
+	font-family: "Moon Flower";
+	src: url("fonts/Moon Flower Bold.ttf");
+}
+
+@font-face{
+	font-family: "Moon Flower";
+	src: url("fonts/Moon Flower Bold.eot");
+}
+
+h1{
+
+	background-size: 2rem 2rem;
+	background-repeat:no-repeat;
+	padding-left:3rem;
+}
+
+h1.billetes{
+    	background-image:url("img/tickets.png");
+}
+
+h1.viaje{
+        background-image:url("img/bus.jpg");
+}
+
+form{
+	display:flex;
+	flex-direction:column;
+	width:20%;
+	gap:1rem;
+}
+
+form .linea_formulario{
+	display:flex;
+}
+
+form .linea_formulario label{
+	flex-basis:40%;
+}
+
+
+form .linea_formulario input[type="text"], 
+form .linea_formulario input[type="submit"],
+form .linea_formulario select
+{
+	flex-basis:60%;
+	padding:2px;
+}
+
+form input[type="button"]{
+	margin-left:1em;
+}
+
+form input:focus {
+	border:2px solid black;
+	outline:0px;
+	background-color:#DBDBDB;
+}
+
+
+form select{
+	border:2px solid grey;
+	outline:0px;
+	background-color:#F2F2F2;
+}
+
+.error{
+	clear:both;
+	padding-left:20px;
+	background-repeat:no-repeat;
+	background-position: 5px center;
+	color:#d70000;
+	padding:5px;
+	padding-left:25px;
+	border: 5px solid #d70000;
+	background-color:rgba(200,0,0,0.2);
+	border-radius:2px;
+	margin:15px;
+ }
+
+.informacion{
+	padding-left:20px;
+	background-repeat:no-repeat;
+	background-position: 5px center;
+	color:#00793d;
+	padding:5px;
+	padding-left:25px;
+	border: 5px solid #00793d;
+	background-color:rgba(200,150,200,0.2);
+	border-radius:2px;
+	margin:15px;
+}
+
+.especial{
+	padding-left:20px;
+	background-repeat:no-repeat;
+	background-position: 5px center;
+	color:#5e85c4;
+	padding:5px;
+	padding-left:25px;
+	border: 5px solid #5e85c4;
+	background-color:#d5dce8;
+	border-radius:2px;
+	margin:15px;
+}
+
+#listado{
+	padding-left:1rem;
+	color:#00793d;
+	background-color:rgba(0,150,0,0.2);
+	border-radius:2px;
+	margin:2rem;
+	border:2px solid #00793D;
+	display:flex;
+	gap:1em;
+}
+
+.autobus{
+	border:2px solid #00793D;
+	background-color:white;
+	padding:1rem;
+}
+
+
+.oculto{
+    display:none !important;
+}
+
+
+

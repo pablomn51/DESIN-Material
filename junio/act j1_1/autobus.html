@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Alta de autobús</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/viajes.css" />
+
+    <script src="js/autobus.js" ></script>
+    <script src="js/flota.js" ></script>
+    <script src="js/flota_prueba.js"></script> 
+    <script src="js/autobus_vista.js"></script>
+  </head>
+
+  <body>
+    <h1 class="viaje">Alta de autobús</h1>
+
+    <form id="billetes">
+      <div class="linea_formulario">
+        <label for="matricula">Matricula</label>
+        <input type="text" name="matricula" id="matricula" />
+      </div>
+
+      <div class="linea_formulario">
+        <label for="origen">Origen</label>
+        <select name="origen" id="origen">
+          <option selected value="none">Elige uno...</option>
+          <option value="Oviedo">Oviedo</option>
+          <option value="Gijón">Gijón</option>
+          <option value="Avilés">Avilés</option>
+          <option value="Mieres">Mieres</option>
+        </select>
+      </div>
+      <div class="linea_formulario">
+        <label for="destino">Destino</label>
+        <select name="destino" id="origen">
+            <option selected value="none">Elige uno...</option>
+            <option value="Oviedo">Oviedo</option>
+            <option value="Gijón">Gijón</option>
+            <option value="Avilés">Avilés</option>
+            <option value="Mieres">Mieres</option>
+          </select>
+      </div>
+
+      <div class="linea_formulario">
+        <label for="fecha">Fecha del trayecto</label>
+        <input type="date" name="fecha" id="fecha" />
+      </div>
+
+      <div class="linea_formulario">
+        <label for="filas">Número de filas</label>
+        <input type="text" name="filas" id="filas" />
+      </div>
+
+      <div class="linea_formulario">
+        <label for="precio-billete">Precio de billete</label>
+        <input type="text" name="precio-billete" id="precio-billete" />
+      </div>
+
+      <div class="linea_formulario">
+        <input type="button" name="alta" id="alta" value="Alta de autobús" />
+        <input type="button" name="borrar" id="borrar" value="Borrar autobús" />
+        <input type="button" name="ver" id="ver" value="Ver autobús" />
+      </div>
+
+      <div id="mensaje" class="linea_formulario oculto"></div>
+    </form>
+
+    <div id="listado" class="oculto"></div>
+  </body>
+</html>
