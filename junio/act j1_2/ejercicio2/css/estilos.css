@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Questrial;
+    src: url(font/Questrial-Regular.ttf);
+}
+
+*,form,input, label{
+    font-family:Questrial;
+}
+
+form{
+    display:grid;
+    padding:1rem;
+    width:20%;
+    gap:1em;
+    grid-template-columns:auto 1fr;
+}
+
+form input{
+    padding:.2em;
+}
+
+form button{
+    grid-column: 1/-1;
+}
+
+.lista-aulas{
+    display:flex;
+    gap:1rem;
+}
+
+.aula{
+    background-color:#d9f7ac;
+    border:2px solid #338112;
+    border-radius:.2rem;
+    color:#338112;
+    padding: .5rem 1rem;
+    font-size:1rem;
+}
+
+.aula h2{
+    padding:0.2rem;
+    text-align:center;
+    border-radius:.2rem;
+    border:2px solid #338112;
+    background-color:#c6ee8a;
+}
+
+.aula p:last-child{
+    border:2px solid #338112;
+    padding:.5em;
+    background-color:#e3eed3;
+    border-radius:.2rem;
+
+}
