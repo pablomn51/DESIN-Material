@@ -1,0 +1,217 @@
+	*{
+		font-family:"Open Sans";
+		box-sizing:border-box;
+	}
+
+	h1{
+		text-align:center;
+		padding:1rem;
+		font-size:3rem;
+		background-color:rgba(34, 81, 221, 0.5);
+		color:#FCFCFC;  
+	}
+
+	h2#ultimo{
+		text-align:center;
+		padding:1rem;
+		font-size:2rem;
+		background-color: #FCFCFC;
+		color:rgba(32, 36, 32, 0.5);;    
+		text-transform: uppercase;
+	}
+
+	.cocktails{
+		display: flex;
+		flex-wrap:wrap;
+	}
+
+	.cocktail{
+		flex-basis:30%;
+		display:flex;
+		gap:1rem;
+		flex-direction: column;
+		background-color:#eeeeee;
+		margin:1rem;
+		transition: .2s;
+	}
+
+	p.nombre-cocktail{
+		text-align:center;
+		padding:3px;
+		font-size:2rem;
+
+	}
+	
+    div.imagen-cocktail{
+        width:50%;
+        height:40vh;
+        margin:0 auto;
+        background-size:100% 100%;
+    }
+
+	.margarita{
+		background-image:url("images/margarita.jpg");
+	}
+	.manhattan{
+		background-image:url("images/manhattan.jpg");
+	}
+	.cosmopolitan{
+		background-image:url("images/cosmopolitan.jpg");
+	}
+	.mojito{
+		background-image:url("images/mojito.jpg");
+	}
+	.daikiri{
+		background-image:url("images/daikiri.jpg");
+	}
+	.negroni{
+		background-image:url("images/negroni.jpg");
+	}
+			
+	
+
+.botones{
+    display:flex;
+    justify-content:center;
+    padding:1rem;
+    gap:1rem;
+}
+
+.boton{
+	font-size:1rem;
+	padding:1rem;
+	border:none;
+    border-radius: .5rem;
+    transition:.5s;
+}
+
+.boton-add{ 
+    background-color:#4e8a39;
+    color:#d8facf;
+    &:hover{
+        background-color: #abd3a0;
+        border-radius: 0rem;
+        color:#4e8a39;
+    }
+}
+
+.boton-ver{
+    background-color:#253992;
+    color:#a3a9f8;
+    &:hover{
+        background-color: #a3a9f8;
+        border-radius: 0rem;
+        color:#253992;
+    }
+}
+
+.boton-volver{
+    background-color:rgb(231, 85, 36);
+    color:rgb(233, 192, 178);
+    &:hover{
+        background-color: rgb(233, 192, 178);
+        border-radius: 0rem;
+        color:rgb(231, 85, 36);;
+    }
+}
+
+
+.mensaje{
+	background-color:rgba(32, 36, 32, 0.5);;
+	color:#FCFCFC;
+	text-align:center;
+	padding:1rem;
+	text-transform: uppercase;
+	margin-bottom:0px;
+}
+.total{
+	background-color:rgba(32, 36, 32, 0.815);;
+	color:#FCFCFC;
+	text-align:center;
+	padding:1rem;
+	text-transform: uppercase;
+	margin-top:0px;
+}
+
+/* Estilos del formulario */
+
+.cocktail-nuevo{
+    
+    background-color:#e6e0e0;
+    margin:1rem;
+    padding:2rem;
+}
+
+.cocktail-nuevo h1{
+	text-align:center;
+	padding:1rem;
+	font-size:3rem;
+	background-color:rgba(34, 81, 221, 0.5);
+	color:#FCFCFC;  
+  
+}
+.cocktail-nuevo form{
+   padding:1rem;
+   display: flex;
+   gap:1rem;
+   button{
+    flex-basis:auto;
+   }
+}
+
+.cocktail-nuevo .form-group{
+
+    display:flex;
+    padding-bottom:1rem;
+    gap:1rem;
+}
+
+.cocktail-nuevo label{
+	flex-basis:30%;
+}
+.cocktail-nuevo input{
+	flex-basis:60%;
+}
+
+.cocktail-nuevo .ng-dirty.ng-valid{
+	border-left: 5px solid #42A948;    
+}
+.cocktail-nuevo .ng-dirty.ng-invalid{
+	border-left: 10px solid #a95f42;    
+}
+
+
+.cocktail-nuevo .alert{
+    background-color:#f9bf86;
+    border-radius: .3em;
+ 
+    padding:1rem;
+}
+
+.cocktail-nuevo .success{
+    background-color:#bfe09e;
+    border-radius: .3em;
+  
+    padding:1rem;
+}
+
+.cocktail-nuevo .boton-nuevo{
+    font-size:1rem;
+    background-color:#4e8a39;
+    padding:1rem;
+    color:#d8facf;
+    border:none;
+    border-radius: .5rem;
+    transition:.5s;
+    &:hover{
+        background-color: #abd3a0;
+        border-radius: 0rem;
+        color:#4e8a39;
+    }
+}
+
+
+
+
+
+
