@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* Estilos de barra de navegación */
+nav .titulo {
+  font-size: 2rem;
+}
+
+nav .d-flex {
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Estilos de la sección principal */
+.imagen {
+  width: 50%;
+}
+
+input {
+  text-align: center;
+}
+
+.size {
+  font-size: 2rem;
+}
+
+.historial {
+  font-size: 1rem;
+}
+
+/* Estilos del detalle de ciudad */
+.tarjeta {
+  width: 18rem;
+}

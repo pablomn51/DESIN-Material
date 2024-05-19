@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ClimaApp</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Uso de Bootswatch (un tema de Bootstap)-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/materia/bootstrap.min.css" integrity="sha384-B4morbeopVCSpzeC1c4nyV0d0cqvlSAfyXVfrPJa25im5p+yEN/YmhlgQP/OyMZD" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="css/clima.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <span class="navbar-brand titulo" href="#">Clima</span>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-end align-content-center historial">
+            <div class="list-group list-group-horizontal">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="#" class="list-group-item list-group-item-action active h3 text-align-center">HISTORIAL</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Oviedo
+                    <span class="badge bg-primary text-light rounded-pill">9</span>
+                </li>          
+                <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                    VACIO
+                </li> -->
+      
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <button  class="btn btn-danger">BORRAR </button>
+                </li>                     
+              </div>
+        </div>
+      </nav>
+
+      <!-- Contenido principal-->
+      <!-- <div class="alert alert-dismissible alert-danger">
+        <div class="text-center">
+            <strong>ERROR AL OBTENER EL CLIMA</strong>
+        </div>
+    </div> -->
+    <div class="container pt-4">
+    <div class="row">
+        <div class="col-lg-4">
+           <img class="imagen" src="https://cdn-icons-png.flaticon.com/512/2640/2640490.png" />
+        </div>
+        <div class="col-lg-8">
+            <input type="text" class="form-control form-control-lg size" placeholder="Ingresa ciudad">
+            <button class="btn btn-primary btn-lg btn-block mt-4">OBTENER CLIMA</button>
+
+            <div *ngIf="query" class="card mt-3">
+                <div class="card-body">
+                    <p><span class="font-weight-bold">Temperatura: </span>9 Cº</p>
+                    <p><span class="font-weight-bold">Humedad: </span>50%</p>
+                    <p><span class="font-weight-bold">Clima: </span>Dry</p>
+                    <button class="btn btn-warning btn-lg btn-block mt-4">Ver detalles</button>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    </div>     
+
+</body>
+</html>
