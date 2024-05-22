@@ -16,6 +16,15 @@ const routes: Routes = [
     path: 'comics/:id',
     loadChildren: () => import('./comics/comics.module').then( m => m.ComicsPageModule)
   },
+  {
+    path: 'eventos',
+    loadChildren: () => import('./eventos/eventos.module').then( m => m.EventosPageModule)
+  },
+  {
+    path: 'favoritos',
+    loadChildren: () => import('./favoritos/favoritos.module').then( m => m.FavoritosPageModule)
+  },
+
 ];
 
 @NgModule({

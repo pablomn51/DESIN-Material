@@ -1,3 +1,20 @@
 <ion-app>
   <ion-router-outlet></ion-router-outlet>
 </ion-app>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home" routerLink="/personajes">
+      <ion-icon name="skull-outline"></ion-icon>
+      Personajes
+    </ion-tab-button>
+    <ion-tab-button tab="radio" routerLink="/eventos">
+      <ion-icon name="people-circle-outline"></ion-icon>
+      Eventos
+    </ion-tab-button>
+    <ion-tab-button tab="library" routerLink="/favoritos">
+      <ion-icon name="bookmark-outline"></ion-icon>
+      Favoritos
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
